@@ -23,10 +23,12 @@
             <p class="">Рассмотрим 5 причин, почему Седона круче, чем Гранд Каньон!</p>
             <section class="why-sedona">
                 <h2 class="visually-hidden">Преимущества Седоны</h2>
-                <div class="advantage-full">
-                    <h3 class="advantage-full-caption">Настоящий городок</h3>
-                    <span class="">— №1 —</span>
-                    <p class="advantage-full-description">Седона — не аттракцион для туристов, там течет своя жизнь</p>
+                <div class="advantages-full">
+                    <div class="advantages-item">
+                        <h3 class="advantage-item-caption">Настоящий городок</h3>
+                        <span class="">— №1 —</span>
+                        <p class="advantage-item-description">Седона — не аттракцион для туристов, там течет своя жизнь</p>
+                    </div>
                     <img src="http://via.placeholder.com/800x255" width="800" height="255" alt="Фотография Седоны">                    
                 </div>
                 <div class="features">
@@ -45,27 +47,29 @@
                         </li>
                     </ul>                    
                 </div>                      
-                <div class="advantage-full">
-                    <h3 class="advantage-full-caption">Там есть мост дьявола</h3>
-                    <span>— №2 —</span>
-                    <p class="advantage-full-description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                <div class="advantages-full">
+                    <div class="advantages-item">
+                        <h3 class="advantage-item-caption">Там есть мост дьявола</h3>
+                        <span class="">— №2 —</span>
+                        <p class="advantage-item-description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                    </div>
                     <img src="http://via.placeholder.com/800x255" width="800" height="255" alt="Фотография моста дьявола">
                 </div>    
                 <div class="advantages">
                     <ul>
                         <li class="advantages-item">
                             <h3 class="advantages-item-caption">Небольшая площадь</h3>
-                            <span>— №3 —</span>
+                            <span class="">— №3 —</span>
                             <p class="advantages-item-description">Все достопримечательности находятся очень близко</p>
                         </li>
                         <li class="advantages-item">
                             <h3 class="advantages-item-caption">Красивая дорога</h3>
-                            <span>— №4 —</span>
+                            <span class="">— №4 —</span>
                             <p class="advantages-item-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                         </li>
                         <li class="advantages-item">
                             <h3 class="advantages-item-caption">Мало туристов</h3>
-                            <span>— №5 —</span>
+                            <span class="">— №5 —</span>
                             <p class="advantages-item-description">Большинство едет в Гранд Каньон и толпится там</p>
                         </li>
                     </ul>              
@@ -77,6 +81,23 @@
                 <p class="hotel-search-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
                 <div class="modal-window">
                     <button class="modal-window-control" type="button">Поиск гостиницы в Седоне</button>
+                    <form class="search" method="get" action="https://echo.htmlacademy.ru">
+                        <label for="arrival-date">Дата заезда:</label>
+                        <input class="" id="arrival-date" type="text" name="arrival-date" placeholder="24 апреля 2017">
+                        <label for="departure-date">Дата выезда:</label>
+                        <input class="" id="departure-date" type="text" name="departure-date" placeholder="4 июля 2017">
+                        <div class="guest-number">    
+                            <label for="adults-number">Взрослые:</label>
+                            <button class="guests-number-controls">-</button>
+                            <input class="" id="adults-number" type="text" name="adults-number" placeholder="2">
+                            <button class="guests-number-controls">+</button>
+                            <label for="children-number">Дети:</label>
+                            <button class="guests-number-controls">-</button>
+                            <input class="" id="children-number" type="text" name="children-number" placeholder="0">
+                            <button class="guests-number-controls">+</button>
+                        </div> 
+                        <button class="" type="submit">Найти</button>                        
+                    </form>
                 </div>
                 <div class="map">
                     <img src="http://via.placeholder.com/1200x475" width="1200" height="475" alt="Гостиницы Седоны на карте">
