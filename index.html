@@ -3,12 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <title>Седона</title>
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header class="main-header">
             <nav class="main-navigation">
                 <a class="main-header-logo">
-                    <img src="http://via.placeholder.com/138x70" width="138" height="70" alt="Логотип Седоны">
+                    <img src="img/main-logo.png" width="138" height="70" alt="Логотип Седоны">
                 </a>
                 <ul>
                     <li><a href="info.html">Информация</a></li>
@@ -29,7 +30,9 @@
                         <span class="">— №1 —</span>
                         <p class="advantage-item-description">Седона — не аттракцион для туристов, там течет своя жизнь</p>
                     </div>
-                    <img src="http://via.placeholder.com/800x255" width="800" height="255" alt="Фотография Седоны">                    
+                    <div class="advantages-full-image">
+                        <img src="img/real-city.jpg" width="800" alt="Фотография Седоны">
+                    </div>                   
                 </div>
                 <div class="features">
                     <ul>
@@ -53,7 +56,9 @@
                         <span class="">— №2 —</span>
                         <p class="advantage-item-description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                     </div>
-                    <img src="http://via.placeholder.com/800x255" width="800" height="255" alt="Фотография моста дьявола">
+                    <div class="advantages-full-image">
+                        <img src="img/devils-bridge.jpg" width="800" alt="Фотография моста дьявола">
+                    </div>
                 </div>    
                 <div class="advantages">
                     <ul>
@@ -82,25 +87,31 @@
                 <div class="modal-window">
                     <button class="modal-window-control" type="button">Поиск гостиницы в Седоне</button>
                     <form class="search" method="get" action="https://echo.htmlacademy.ru">
-                        <label for="arrival-date">Дата заезда:</label>
-                        <input class="" id="arrival-date" type="text" name="arrival-date" placeholder="24 апреля 2017">
-                        <label for="departure-date">Дата выезда:</label>
-                        <input class="" id="departure-date" type="text" name="departure-date" placeholder="4 июля 2017">
+                        <div class="arrival-date">
+                            <label for="arrival-date-input">Дата заезда:</label>
+                            <input class="arrival-date-input" id="arrival-date-input" type="text" name="arrival-date" placeholder="24 апреля 2017">
+                            <button class="calendar" type="button"></button>
+                        </div>
+                        <div class="departure-date">
+                            <label for="departure-date-input">Дата выезда:</label>
+                            <input class="departure-date-input" id="departure-date-input" type="text" name="departure-date" placeholder="4 июля 2017">
+                            <button class="calendar" type="button"></button>
+                        </div>
                         <div class="guest-number">    
                             <label for="adults-number">Взрослые:</label>
-                            <button class="guests-number-controls">-</button>
+                            <button class="guests-number-controls" type="button">-</button>
                             <input class="" id="adults-number" type="text" name="adults-number" placeholder="2">
-                            <button class="guests-number-controls">+</button>
+                            <button class="guests-number-controls" type="button">+</button>
                             <label for="children-number">Дети:</label>
-                            <button class="guests-number-controls">-</button>
+                            <button class="guests-number-controls" type="button">-</button>
                             <input class="" id="children-number" type="text" name="children-number" placeholder="0">
-                            <button class="guests-number-controls">+</button>
+                            <button class="guests-number-controls" type="button">+</button>
                         </div> 
                         <button class="" type="submit">Найти</button>                        
                     </form>
                 </div>
                 <div class="map">
-                    <img src="http://via.placeholder.com/1200x475" width="1200" height="475" alt="Гостиницы Седоны на карте">
+                    <img src="img/map.jpg" width="1200" alt="Гостиницы Седоны на карте">
                 </div>
             </section>
         </main>
@@ -120,7 +131,9 @@
             <section class="footer-copyright">
                 <h2 class="visually-hidden">Разработка сайта</h2>
                 <span>Website by</span> 
-                <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="http://via.placeholder.com/115x41" alt="Логотип HTML Academy"></a>
+                <a href="https://htmlacademy.ru/intensive/htmlcss">
+                    <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy">
+                </a>
             </section>
         </footer>  
     </body>
