@@ -11,6 +11,10 @@ body {
     padding: 0 10px;
 }
 
+* {
+    outline: 1px solid red;
+}
+
 a {
     text-decoration: none;
 }
@@ -20,7 +24,7 @@ a {
     max-width: 1200px;
     margin: 0 auto;
     background-color: #ffffff;
-    box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
+    box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
 .main-header-logo {
@@ -52,7 +56,7 @@ a {
     margin-left: 6%;
 }
 
-.main-navigation li:nth-child(4n)  {
+.main-navigation li:nth-child(4n) {
     margin-right: 6%;
 }
 
@@ -94,8 +98,8 @@ a {
     height: 510px;
     background-color: #dae8f1;
     background-image: url("../img/welcome-to-sedona.png"),
-                      url("../img/mask.png"),
-                      url("../img/main-background.jpg");
+    url("../img/mask.png"),
+    url("../img/main-background.jpg");
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: center, bottom, right top; /*позиционирование пока не по макету*/
     background-size: 460px, 100% 57px, cover;
@@ -127,19 +131,18 @@ a {
 }
 
 .advantages-item {
-    width: 33%;
+    width: 33.33%;
     text-align: center;
 }
 
 .advantages-full-image {
-    width: 67%;
-    overflow: hidden; /*временно*/
+    width: 66.66%;
 }
 
 .advantages-full-image img {
     width: 100%;
     height: auto;
-    object-fit: cover;
+    object-fit: cover; /*не работает*/
 }
 
 .advantages-full:last-of-type {
@@ -164,13 +167,13 @@ a {
 }
 
 .features-item {
-    width: 33%;
+    width: 33.33%;
     text-align: center;
 }
 
 .advantages-item {
-    width: 33%;
-    text-align: center;   
+    width: 33.33%;
+    text-align: center;
 }
 
 .advantages-item-caption,
@@ -195,13 +198,13 @@ a {
     background-color: #eeeeee;
 }
 
-.visually-hidden { 
-    position: absolute; 
+.visually-hidden {
+    position: absolute;
     width: 1px;
     height: 1px;
     margin: -1px;
     padding: 0;
-    border: 0; 
+    border: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
@@ -228,7 +231,7 @@ a {
 
 .modal-window-control:hover,
 .modal-window-control:focus {
-   background-color: #604e43; 
+    background-color: #604e43;
 }
 
 .modal-window-control:active {
@@ -314,14 +317,12 @@ a {
 
 .map {
     width: 100%;
-    height: 473px; /*временно*/
-    overflow: hidden; /*временно*/
 }
 
 .map img {
     width: 100%;
     height: auto;
-    object-fit: cover;
+    object-fit: cover; /*не работает*/
 }
 
 .main-footer {
@@ -332,7 +333,7 @@ a {
 }
 
 .footer-feedback {
-    width: 33%;
+    width: 33.33%;
     text-align: center;
 }
 
@@ -344,7 +345,7 @@ a {
 }
 
 .footer-social {
-    width: 33%;
+    width: 33.33%;
     text-align: center;
 }
 
@@ -361,11 +362,27 @@ a {
 
 .social-button {
     display: block;
+    position: relative;
     width: 46px;
     height: 48px;
     margin-right: 6px;
     background-color: #81b3d2;
 }
+
+.social-button svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/*не знаю, как обнулить маргин у последней ссылки
+
+.social-button {
+    margin-right: 0;
+}*/
 
 .social-button:hover,
 .social-button:focus {
@@ -381,7 +398,7 @@ a {
 }
 
 .footer-copyright {
-    width: 33%;
+    width: 33.33%;
     text-align: center;
 }
 
@@ -456,22 +473,37 @@ a {
     color: #000000;
 }
 
+.search-result-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0 6%;
+}
+
 .search-result-number {
+    width: 135px;
+    margin-right: 30px;
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
     color: #000000;
 }
 
+.search-result-sorting {
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
 .search-result-sorting ul {
     margin: 0;
     padding: 0;
     list-style: none;
-}
-
-.search-result-sorting {
-    font-size: 12px;
-    line-height: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
 .search-result-sorting a {
@@ -519,7 +551,7 @@ a {
     margin: 0 6%;
     display: flex;
     flex-direction: row;
-    padding: 30px 0; 
+    padding: 30px 0;
 }
 
 .hotels-item-image {
@@ -530,7 +562,6 @@ a {
 .hotels-item-about {
     width: 40%;
     margin-right: auto;
-    margin-bottom: 
 }
 
 .hotels-item-range {
@@ -578,9 +609,9 @@ a {
     margin-right: 0;
 }
 
-.hotels-item-info {    
+.hotels-item-info {
     background-color: #81b3d2;
-    }
+}
 
 .hotels-item-info:hover,
 .hotels-item-info:focus {
