@@ -11,12 +11,13 @@ body {
     padding: 0 10px;
 }
 
-* {
-    outline: 1px solid red;
-}
-
 a {
     text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
 
 .wrapper {
@@ -101,7 +102,7 @@ a {
     url("../img/mask.png"),
     url("../img/main-background.jpg");
     background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: center, bottom, right top; /*позиционирование пока не по макету*/
+    background-position: center, bottom, right -80px;
     background-size: 460px, 100% 57px, cover;
 }
 
@@ -137,12 +138,11 @@ a {
 
 .advantages-full-image {
     width: 66.66%;
+    overflow: hidden;
 }
 
 .advantages-full-image img {
-    width: 100%;
-    height: auto;
-    object-fit: cover; /*не работает*/
+    transform: translateY(-20%); /*отлично работает, но развалится без фикса высоты*/
 }
 
 .advantages-full:last-of-type {
@@ -319,12 +319,6 @@ a {
     width: 100%;
 }
 
-.map img {
-    width: 100%;
-    height: auto;
-    object-fit: cover; /*не работает*/
-}
-
 .main-footer {
     background-color: rgba(254, 254, 254, 0.9);
     display: flex;
@@ -360,12 +354,19 @@ a {
     align-content: stretch;
 }
 
+.footer-social li {
+    margin-right: 6px;
+}
+
+.footer-social li:last-child {
+    margin-right: 0;
+}
+
 .social-button {
     display: block;
     position: relative;
     width: 46px;
     height: 48px;
-    margin-right: 6px;
     background-color: #81b3d2;
 }
 
@@ -377,12 +378,6 @@ a {
     bottom: 0;
     margin: auto;
 }
-
-/*не знаю, как обнулить маргин у последней ссылки
-
-.social-button {
-    margin-right: 0;
-}*/
 
 .social-button:hover,
 .social-button:focus {
@@ -408,10 +403,29 @@ a {
 }
 
 .hotels-search {
+    margin: 0 6%;
+    padding: 30px 45px;
+    height: 160px; /*временно*/
     background-color: #799bbf;
     background-image: url("../img/hotels-background.jpg");
     background-position: center;
     background-size: cover;
+}
+
+.filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.input-group:nth-child(1) {
+    width: 20%;
+    margin-right: 15px;
+}
+
+.input-group:nth-child(2) {
+    flex-grow: 1;
+    margin: auto;
 }
 
 .filter {
@@ -422,15 +436,11 @@ a {
     color: #ffffff;
 }
 
-.filter fieldset {
-    margin: 0;
-    padding: 0;
-    border: none;
-}
-
-.filter legend {
+.input-group-caption {
     font-size: 16px;
+    line-height: 21px;
     font-weight: 700;
+    margin: 0;
 }
 
 .filter ul {
@@ -490,6 +500,7 @@ a {
 }
 
 .search-result-sorting {
+    width: calc(100% - 135px);
     font-size: 12px;
     line-height: 18px;
     display: flex;
@@ -497,8 +508,25 @@ a {
     justify-content: flex-start;
 }
 
-.search-result-sorting ul {
+.sorting-parameters {
     margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.sorting-parameters li {
+    margin-right: 34px;
+}
+
+.sorting-parameters li:last-child {
+    margin-right: 0;
+}
+
+.sorting-up-down {
+    margin: 0 0 0 auto;
     padding: 0;
     list-style: none;
     display: flex;
@@ -528,6 +556,10 @@ a {
 
 .sorting-current a:active {
     color: #81b3d2;
+}
+
+.search-result-sorting > span {
+    margin-right: 40px;
 }
 
 .hotels {
@@ -560,7 +592,7 @@ a {
 }
 
 .hotels-item-about {
-    width: 40%;
+    flex-grow: 1;
     margin-right: auto;
 }
 
@@ -575,7 +607,7 @@ a {
     font-weight: 700;
     margin: 0;
     padding: 0;
-    margin-bottom: 13px;
+    margin-bottom: 5px;
 }
 
 .hotels-item-caption a {
@@ -592,21 +624,28 @@ a {
 }
 
 .hotels-item-buttons {
-    font-size: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
-.hotels-item-buttons a {
+.column-1 {
+    margin-right: 6px;
+}
+
+.column-1 p,
+.column-2 p {
+    margin: 0 0 10px 0;
+}
+
+.hotels-item-info,
+.hotels-item-reserve {
     display: inline-block;
     font-size: 14px;
     line-height: 21px;
     font-weight: 700;
     color: #ffffff;
     padding: 5px 17px;
-    margin-right: 6px;
-}
-
-.hotels-item-buttons a:last-child {
-    margin-right: 0;
 }
 
 .hotels-item-info {

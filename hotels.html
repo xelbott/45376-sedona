@@ -26,9 +26,9 @@
                 <h1 class="visually-hidden">Поиск гостиниц в Седоне</h1>
                 <section class="hotels-search">
                     <h2 class="visually-hidden">Параметры поиска</h2>
-                    <form class="filter" method="get" action="https://echo.htmlacademy.ru"> <!--как сделать сетку этого блока — менять разметку или делать на инлайн-блоках?-->
-                        <fieldset>
-                            <legend>Инфраструктура:</legend> 
+                    <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+                        <div class="input-group">
+                            <p class="input-group-caption">Инфраструктура:</p> 
                             <ul>
                                 <li class="filter-option">
                                     <label>
@@ -49,9 +49,9 @@
                                     </label>    
                                 </li>
                             </ul>         
-                        </fieldset>
-                        <fieldset>
-                            <legend>Тип жилья:</legend>
+                        </div>
+                        <div class="input-group">
+                            <p class="input-group-caption">Тип жилья:</p>
                             <ul>
                                 <li class="filter-option">
                                     <label>
@@ -72,9 +72,9 @@
                                     </label>    
                                 </li>
                             </ul>
-                        </fieldset>
-                        <fieldset>
-                            <legend>Стоимость в сутки (р.)</legend>
+                        </div>
+                        <div class="input-group">
+                            <p class="input-group-caption">Стоимость в сутки (р.)</p>
                             <div class="input-wrapper">
                                 <label>
                                     <span class="visually-hidden">Минимальная цена</span>
@@ -92,11 +92,11 @@
                                 <div class="min-price"></div>
                                 <div class="max-price"></div>
                             </div>
-                        </fieldset>
-                        <button class="filter-button" type="submit">Показать</button>
+                            <button class="filter-button" type="submit">Показать</button>
+                        </div>
                     </form>
                 </section>
-                <section class="search-result"> <!--не получается с этим блоком-->
+                <section class="search-result">
                     <div class="search-result-header">
                         <h2 class="visually-hidden">Результаты поиска</h2>
                         <div class="search-result-number"">
@@ -123,12 +123,16 @@
                                 </div>
                                 <div class="hotels-item-about">
                                     <h3 class="hotels-item-caption"><a href="#">Amara Resort & SPA</a></h3>
-                                    <span class="hotels-item-type">Гостиница</span>
-                                    <span class="hotels-item-price">От 4000 р.</span>
                                     <div class="hotels-item-buttons">
-                                        <a class="hotels-item-info" href="#">Подробнее</a>
-                                        <a class="hotels-item-reserve" href="#">Забронировать</a>
-                                    </div>
+                                        <div class="column-1">
+                                            <p class="hotels-item-type">Гостиница</p>
+                                            <a class="hotels-item-info" href="#">Подробнее</a>
+                                        </div>
+                                        <div class="column-2">
+                                            <p class="hotels-item-price">От 4000 р.</p>
+                                            <a class="hotels-item-reserve" href="#">Забронировать</a>
+                                        </div>
+                                    </div>    
                                 </div>
                                 <div class="hotels-item-range">
                                     <span class="hotels-item-stars"><span class="visually-hidden">4 звезды</span></span>
@@ -143,12 +147,16 @@
                                 </div>
                                 <div class="hotels-item-about">
                                     <h3 class="hotels-item-caption"><a href="#">Desert Quail Inn</a></h3>
-                                    <span class="hotels-item-type">Мотель</span>
-                                    <span class="hotels-item-price">От 3000 р.</span>
                                     <div class="hotels-item-buttons">
-                                        <a class="hotels-item-info" href="#">Подробнее</a> 
-                                        <a class="hotels-item-reserve" href="#">Забронировать</a>
-                                    </div>
+                                        <div class="column-1">
+                                            <p class="hotels-item-type">Мотель</p>
+                                            <a class="hotels-item-info" href="#">Подробнее</a>
+                                        </div>
+                                        <div class="column-2">
+                                            <p class="hotels-item-price">От 3000 р.</p>
+                                            <a class="hotels-item-reserve" href="#">Забронировать</a>
+                                        </div>
+                                    </div>    
                                 </div>
                                 <div class="hotels-item-range">
                                     <span class="hotels-item-stars"><span class="visually-hidden">3 звезды</span></span>
@@ -163,12 +171,16 @@
                                 </div>
                                 <div class="hotels-item-about">
                                     <h3 class="hotels-item-caption"><a href="#">Villas at Poco Diablo</a></h3>
-                                    <span class="hotels-item-type">Апартаменты</span>
-                                    <span class="hotels-item-price">От 2000 р.</span>
                                     <div class="hotels-item-buttons">
-                                        <a class="hotels-item-info" href="#">Подробнее</a>
-                                        <a class="hotels-item-reserve" href="#">Забронировать</a>
-                                    </div>
+                                        <div class="column-1">
+                                            <p class="hotels-item-type">Апартаменты</p>
+                                            <a class="hotels-item-info" href="#">Подробнее</a>
+                                        </div>
+                                        <div class="column-2">
+                                            <p class="hotels-item-price">От 2000 р.</p>
+                                            <a class="hotels-item-reserve" href="#">Забронировать</a>
+                                        </div>
+                                    </div>    
                                 </div>
                                 <div class="hotels-item-range">
                                     <span class="hotels-item-stars"><span class="visually-hidden">2 звезды</span></span>
