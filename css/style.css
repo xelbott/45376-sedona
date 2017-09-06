@@ -628,7 +628,7 @@ img {
 }
 
 .hotels-search {
-    padding: 30px 6%;
+    padding: 28px 6%;
     background-color: #799bbf;
     background-image: url("../img/hotels-background.jpg");
     background-position: center;
@@ -655,7 +655,7 @@ img {
 }
 
 .input-group:nth-child(3) {
-    width: 30.3%;
+    width: 30%;
 } /*не могу высчитать проценты. при ширине 768px выглядит не как на макете*/
 
 .input-group-caption {
@@ -689,6 +689,8 @@ img {
     cursor: pointer;
 }
 
+/*подписи не могу выровнять по центру по вертикали*/
+
 .filter-input-checkbox input[type="checkbox"] + .checkbox-indicator {
     position: absolute;
     top: 0;
@@ -717,6 +719,8 @@ img {
     margin-bottom: 20px;
     padding: 5px 0;
 }
+
+/*не получается выровнять поля с подписями по центру*/
 
 .input-wrapper::after {
     content: "";
@@ -819,7 +823,7 @@ img {
 .filter-button {
     display: block;
     margin: 0 auto;
-    padding: 6px 35px;
+    padding: 5px 30px;
     font-size: 14px;
     line-height: 21px;
     color: #ffffff;
@@ -973,7 +977,7 @@ img {
     margin: 0 6%;
     display: flex;
     flex-direction: row;
-    padding: 28px 0;
+    padding: 30px 0;
 }
 
 .hotels-item-image {
@@ -998,7 +1002,7 @@ img {
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
-    margin: -4px 0 6px;
+    margin: -5px 0 7px;
     padding: 0;
 }
 
@@ -1027,7 +1031,7 @@ img {
 
 .column-1 p,
 .column-2 p {
-    margin: 0 0 13px 0;
+    margin: 0 0 14px 0;
 }
 
 .hotels-item-info,
@@ -1098,7 +1102,7 @@ img {
 
 .hotels-item-rating {
     display: inline-block;
-    padding: 4px 15px;
+    padding: 3px 13px;
     color: #666666;
     background-color: #f2f2f2;
 }
