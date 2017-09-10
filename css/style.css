@@ -46,6 +46,9 @@ img {
 }
 
 .main-header-logo {
+    position: relative;
+    z-index: 2;
+
     -ms-flex-item-align: center;
         align-self: center;
     width: 138px;
@@ -697,6 +700,7 @@ img {
 
 .main-page .main-footer {
     position: relative;
+    z-index: 2;
 
     margin-top: -120px;
 }
