@@ -43,9 +43,11 @@ img {
 .main-header-logo {
     -ms-flex-item-align: center;
         align-self: center;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
     width: 138px;
-    margin-top: -56px;
-    margin-bottom: -22px;
+    margin-bottom: -78px;
 }
 
 .main-navigation ul {
