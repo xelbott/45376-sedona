@@ -38,14 +38,16 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
 }
 
 .main-header-logo {
     -ms-flex-item-align: center;
         align-self: center;
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
     width: 138px;
     margin-bottom: -78px;
 }
@@ -90,13 +92,6 @@ img {
     text-align: right;
 }
 
-.main-navigation {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 26px;
-    color: #000000;
-}
-
 .main-navigation a {
     color: #000000;
 }
@@ -121,8 +116,8 @@ img {
 
     background-color: #dae8f1;
     background-image: url("../img/welcome-to-sedona.png"),
-    url("../img/mask.png"),
-    url("../img/main-background.jpg");
+                      url("../img/mask.png"),
+                      url("../img/main-background.jpg");
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: center 76px, bottom, right 28%;
     background-size: 458px, 100% 57px, cover;
@@ -170,7 +165,7 @@ img {
 }
 
 .advantages-full .advantages-item {
-    padding: 48px 4% 10px;
+    padding: 48px 4% 20px;
 }
 
 .advantages-item {
@@ -178,7 +173,7 @@ img {
             box-sizing: border-box;
     width: 33.33%;
     min-height: 256px;
-    padding: 48px 5% 10px;
+    padding: 48px 5% 20px;
 
     text-align: center;
 }
@@ -231,7 +226,7 @@ img {
     width: 33.33%;
     min-height: 325px;
     margin-bottom: 5px;
-    padding: 161px 4.5% 10px;
+    padding: 161px 4.5% 20px;
 
     text-align: center;
 }
@@ -316,7 +311,7 @@ img {
 .search-text-wrapper {
     width: 450px;
     margin: 0 auto;
-    padding: 50px 10px 47px;
+    padding: 50px 6% 47px;
 
     text-align: center;
 }
@@ -428,9 +423,7 @@ img {
     position: relative;
 
     display: -webkit-box;
-
     display: -ms-flexbox;
-
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -934,9 +927,7 @@ img {
     position: relative;
 
     display: -webkit-box;
-
     display: -ms-flexbox;
-
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -971,14 +962,12 @@ img {
 }
 
 .input-wrapper label {
-    display: inline-block;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 50%;
 
     font-size: 14px;
     line-height: 21px;
-    vertical-align: middle;
     text-align: center;
 
     cursor: pointer;
