@@ -5,8 +5,6 @@ var arrivalDate = modalWindow.querySelector("[name=arrival-date]");
 var departureDate = modalWindow.querySelector("[name=departure-date]");
 var adultsNumber = modalWindow.querySelector("[name=adults-number]");
 var childrenNumber = modalWindow.querySelector("[name=children-number]");
-var storageAdults = localStorage.getItem("adults");
-var storageChildren = localStorage.getItem("children");
 modalWindow.classList.add("modal-window-hide");
 
 modalWindowControl.addEventListener("click", function(evt) {
@@ -32,4 +30,7 @@ searchForm.addEventListener("submit", function(evt) {
 		localStorage.setItem("adults", adultsNumber.value);
 		localStorage.setItem("children", childrenNumber.value);
 	}
-})
+});
+
+var storageAdults = localStorage.getItem("adults");
+var storageChildren = localStorage.getItem("children");
