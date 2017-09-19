@@ -234,7 +234,7 @@ img {
     text-align: center;
 }
 
-.features-item:before {
+.features-item::before {
     content: "";
     position: absolute;
     top: 60px;
@@ -247,19 +247,19 @@ img {
     background-repeat: no-repeat;
 }
 
-.features-item:nth-child(1):before {
+.features-item:nth-child(1)::before {
     margin-left: -37px;
 
     background-image: url("../img/icon-1.svg");
 }
 
-.features-item:nth-child(2):before {
+.features-item:nth-child(2)::before {
     margin-left: -41px;
 
     background-image: url("../img/icon-2.svg");
 }
 
-.features-item:nth-child(3):before {
+.features-item:nth-child(3)::before {
     margin-top: -4px;
     margin-left: -31px;
 
@@ -565,6 +565,22 @@ img {
 
 .search input::placeholder {
     color: #000000;
+}
+
+.search input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.search input:focus::-moz-placeholder { 
+    color: transparent;
+}
+
+.search input:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+.search input:focus::placeholder {
+    color: transparent;
 }
 
 .search input:hover {
@@ -1077,6 +1093,22 @@ img {
     line-height: 21px;
     color: #ffffff;
     text-transform: uppercase;
+}
+
+.filter-input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.filter-input:focus::-moz-placeholder { 
+    color: transparent;
+}
+
+.filter-input:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+.filter-input:focus::placeholder {
+    color: transparent;
 }
 
 .price-controls {
